@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonaLisa", "MonaLisa\MonaLisa.csproj", "{814B9EA7-CC14-4E9B-85E7-6CA02472ABEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsAPI", "..\WindowsAPI\WindowsAPI\WindowsAPI.csproj", "{FDE778E3-6E79-4442-ABCE-3165768F0B4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{814B9EA7-CC14-4E9B-85E7-6CA02472ABEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{814B9EA7-CC14-4E9B-85E7-6CA02472ABEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{814B9EA7-CC14-4E9B-85E7-6CA02472ABEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{814B9EA7-CC14-4E9B-85E7-6CA02472ABEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDE778E3-6E79-4442-ABCE-3165768F0B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDE778E3-6E79-4442-ABCE-3165768F0B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDE778E3-6E79-4442-ABCE-3165768F0B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDE778E3-6E79-4442-ABCE-3165768F0B4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
