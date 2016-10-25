@@ -28,7 +28,8 @@ namespace MonaLisa
             public static void Run()
             {
                
-                if (!Window.DoesExist("Untiteld - Paint"))
+			   
+                if (!Window.DoesExist("Untitled - Paint"))
                 {
                     Console.WriteLine("Microsoft Paint Window with the name \"Untitled - Paint\" not found.");
                     Console.ReadLine();
