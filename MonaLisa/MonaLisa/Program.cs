@@ -28,13 +28,13 @@ namespace MonaLisa
             public static void Run()
             {
                
-			   
                 if (!Window.DoesExist("Untitled - Paint"))
                 {
                     Console.WriteLine("Microsoft Paint Window with the name \"Untitled - Paint\" not found.");
                     Console.ReadLine();
                     return;
                 }
+		    
                 IntPtr hWnd = Window.Get("Untitled - Paint");
                 Bitmap bitmap = Properties.Resources.mona;
 
@@ -48,6 +48,7 @@ namespace MonaLisa
 
                 System.Threading.Thread.Sleep(100);
 
+		// The actual drawing.
                 for (int y = 0; y < bmp.Height; y++)
                 {
                     for (int x = 0; x < bmp.Width; x++)
