@@ -1,4 +1,4 @@
-# Task-Automation
+# WinAPI-Wrapper
 
 Windows API wrapper class for simulating mouse movement, clicking, window manipulation and more...
 
