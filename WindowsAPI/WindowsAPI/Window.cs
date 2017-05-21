@@ -275,7 +275,7 @@ namespace WindowsAPI
         /// <summary>
         /// Disable a window's maximize button.
         /// </summary>
-        /// <param name="hWnd"></param>
+        /// <param name="hWnd">The handle to the window.</param>
         public static void DisableMaximizeButton(IntPtr hWnd)
         {
             var currentStyle = WinAPI.GetWindowLong(hWnd, -16);
@@ -285,11 +285,30 @@ namespace WindowsAPI
         /// <summary>
         /// Disable a window's minimize button.
         /// </summary>
-        /// <param name="hWnd"></param>
+        /// <param name="hWnd">The handle to the window.</param>
         public static void DisableMinimizeButton(IntPtr hWnd)
         {
             var currentStyle = WinAPI.GetWindowLong(hWnd, -16);
             WinAPI.SetWindowLong(hWnd, -16, (currentStyle & ~0x20000));
+        }
+
+        /// <summary>
+        /// Flip the layout of a window.
+        /// </summary>
+        /// <param name="hWnd">The handle to the window.</param>
+        public static void FlipLeft(IntPtr hWnd)
+        {
+            var currentStyle = WinAPI.GetWindowLong(hWnd, -20);
+            WinAPI.SetWindowLong(hWnd, -20, (currentStyle | (int)0x00400000L));
+        }
+
+        /// <summary>
+        /// Flip the layout of a window back to its original state.
+        /// </summary>
+        /// <param name="hWnd">The handle to the window.</param>
+        public static void FlipRight(IntPtr hWnd)
+        {
+            WinAPI.SetWindowLong(hWnd, -20, 0);
         }
 
         /// <summary>
